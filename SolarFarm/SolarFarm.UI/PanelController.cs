@@ -49,7 +49,7 @@ namespace SolarFarm.UI
                         running = false;
                         break;
                     default:
-                        _ui.Display("Invalid input. Please enter a number 1 - 7");
+                        _ui.Display("Invalid input. Please enter a number 1 - 6");
                         break;
                 }
             }
