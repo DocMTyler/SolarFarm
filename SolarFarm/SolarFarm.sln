@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarFarm.UI", "SolarFarm.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarFarm.Core", "SolarFarm.Core\SolarFarm.Core.csproj", "{5AB2A362-D973-4CF3-91B0-0FECE46D67F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarFarm.BLL", "SolarFarm.BLL\SolarFarm.BLL.csproj", "{7A33D0C5-E2B1-44D7-8B8A-A9B733CB80B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarFarm.DAL", "SolarFarm.DAL\SolarFarm.DAL.csproj", "{9C228D72-6DC5-4C18-89FF-C0D1C7246D64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{5AB2A362-D973-4CF3-91B0-0FECE46D67F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB2A362-D973-4CF3-91B0-0FECE46D67F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB2A362-D973-4CF3-91B0-0FECE46D67F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A33D0C5-E2B1-44D7-8B8A-A9B733CB80B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A33D0C5-E2B1-44D7-8B8A-A9B733CB80B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A33D0C5-E2B1-44D7-8B8A-A9B733CB80B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A33D0C5-E2B1-44D7-8B8A-A9B733CB80B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C228D72-6DC5-4C18-89FF-C0D1C7246D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C228D72-6DC5-4C18-89FF-C0D1C7246D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C228D72-6DC5-4C18-89FF-C0D1C7246D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C228D72-6DC5-4C18-89FF-C0D1C7246D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
