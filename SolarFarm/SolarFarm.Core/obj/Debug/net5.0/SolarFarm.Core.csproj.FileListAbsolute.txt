@@ -1,0 +1,12 @@
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\bin\Debug\net5.0\SolarFarm.Core.deps.json
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\bin\Debug\net5.0\SolarFarm.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\bin\Debug\net5.0\ref\SolarFarm.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\bin\Debug\net5.0\SolarFarm.Core.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\SolarFarm.Core.csproj.AssemblyReference.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\SolarFarm.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\SolarFarm.Core.AssemblyInfoInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\SolarFarm.Core.AssemblyInfo.cs
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\SolarFarm.Core.csproj.CoreCompileInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\SolarFarm.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\ref\SolarFarm.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.Core\obj\Debug\net5.0\SolarFarm.Core.pdb

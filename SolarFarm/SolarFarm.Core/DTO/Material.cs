@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolarFarm.Core
+namespace SolarFarm.Core.DTO
 {
     public enum Material
     {

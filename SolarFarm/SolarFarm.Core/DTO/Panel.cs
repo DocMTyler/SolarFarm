@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SolarFarm.Core
+namespace SolarFarm.Core.DTO
 {
     public class Panel
     {

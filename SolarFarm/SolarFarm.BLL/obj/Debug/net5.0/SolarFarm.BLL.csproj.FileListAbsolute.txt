@@ -1,0 +1,17 @@
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\SolarFarm.BLL.deps.json
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\SolarFarm.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\ref\SolarFarm.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\SolarFarm.BLL.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\SolarFarm.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\SolarFarm.DAL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\SolarFarm.Core.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\bin\Debug\net5.0\SolarFarm.DAL.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.csproj.AssemblyReference.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.AssemblyInfoInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.AssemblyInfo.cs
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.csproj.CoreCompileInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.csproj.CopyComplete
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\ref\SolarFarm.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\SolarFarm\SolarFarm\SolarFarm.BLL\obj\Debug\net5.0\SolarFarm.BLL.pdb
