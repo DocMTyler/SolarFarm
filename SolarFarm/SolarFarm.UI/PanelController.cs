@@ -80,7 +80,7 @@ namespace SolarFarm.UI
             _ui.Display("4. Edit a Panel");
             _ui.Display("5. Delete a Panel");
             _ui.Display("6. Quit");
-            _ui.Display("Please enter a selection 1 - 7");
+            _ui.Display("Please enter a selection 1 - 6");
         }
 
         public void ViewPanelInfo()
@@ -91,6 +91,8 @@ namespace SolarFarm.UI
         public void ViewAllPanels()
         {
             _ui.Display("Viewing all Panels");
+            var panelList = Service.LoadAll().Count;
+            _ui.Display(panelList.ToString());
         }
 
         public void AddPanel()

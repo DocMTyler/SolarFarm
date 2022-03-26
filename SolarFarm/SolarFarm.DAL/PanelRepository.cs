@@ -2,6 +2,7 @@
 using SolarFarm.Core.DTO;
 using System.Collections.Generic;
 using SolarFarm.Core.Interfaces;
+using System.IO;
 
 namespace SolarFarm.DAL
 {
@@ -12,14 +13,8 @@ namespace SolarFarm.DAL
         public PanelRepository()
         {
             //Call Read File methods
-            _panels = new List<Panel>();
-            Panel panel = new();
-            panel.Section = "";
-            panel.Row = 1;
-            panel.Column = 1;
-            panel.Year = new();
-            panel.IsTracking = false;
-            panel.Material = (Material)1;
+            _panels = ReadFile(Directory.GetCurrentDirectory() + @"\Panels.csv");
+
         }
 
         public List<Panel> GetAll()
@@ -72,8 +67,49 @@ namespace SolarFarm.DAL
 
         public List<Panel> ReadFile(string path)
         {
+            List<Panel> panelList = new();
+
+            if (File.Exists(path))
+            {
+                using(StreamReader reader = new StreamReader(path))
+                {
+                    string currentLine = reader.ReadLine();
+                    currentLine = reader.ReadLine();
+                    int lineCount = 0;
+
+                    while(currentLine != null)
+                    {
+                        lineCount++;
+                        Panel panel = new();
+                        string[] columns = currentLine.Split(",");
+
+                        panel.Section = columns[0];
+                        panel.Row = int.Parse(columns[1]);
+                        panel.Column = int.Parse(columns[2]);
+                        panel.YearInstalled = DateTime.Parse(columns[3]);
+                        panel.Material = (Material)int.Parse(columns[4]);
+                        panel.IsTracking = bool.Parse(columns[5]);
+
+                        panelList.Add(panel);
+                        currentLine = reader.ReadLine();
+                    }
+                }
+            }
+            else
+            {
+                return panelList;
+            }
+            
+            return panelList;
+        }
+
+        public List<Panel> WriteFile(string path)
+        {
+            
+            
             return new List<Panel>();
         }
+
 
     }
 }

@@ -10,7 +10,7 @@ namespace SolarFarm.Core.DTO
         
         public int Column { get; set; }
         
-        public DateTime Year { get; set; }
+        public DateTime YearInstalled { get; set; }
 
         public bool IsTracking { get; set; }
 
