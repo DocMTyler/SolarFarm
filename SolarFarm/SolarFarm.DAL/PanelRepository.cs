@@ -12,22 +12,27 @@ namespace SolarFarm.DAL
 
         public PanelRepository()
         {
-            //Call Read File methods
             _panels = ReadFile(Directory.GetCurrentDirectory() + @"\Panels.csv");
-
         }
 
-        public List<Panel> GetAll()
+        public List<Panel> FindPanelsBySection(string section)
         {
-            List<Panel> panels = new(_panels);
-            return panels;
+            List<Panel> panelList = new();
+            foreach (var storedPanel in _panels)
+            {
+                if (section == storedPanel.Section)
+                {
+                    panelList.Add(storedPanel);
+                }
+            }
+            return panelList;
         }
 
         public Panel Get(Panel panel)
         {
-            foreach(var storedPanel in _panels)
+            foreach (var storedPanel in _panels)
             {
-                if(panel.Section == storedPanel.Section && panel.Row == storedPanel.Row && panel.Column == storedPanel.Column)
+                if (panel.Section == storedPanel.Section && panel.Row == storedPanel.Row && panel.Column == storedPanel.Column)
                 {
                     return storedPanel;
                 }
@@ -38,27 +43,60 @@ namespace SolarFarm.DAL
         public bool Add(Panel panel)
         {
             int beforeAdd = _panels.Count;
-            if (!_panels.Contains(panel)) _panels.Add(panel);
+            
+            foreach(var storedPanel in _panels)
+            {
+                if(storedPanel.Section == panel.Section && storedPanel.Row == panel.Row && storedPanel.Column == panel.Column)
+                {
+                    Console.WriteLine("Cannot add a duplicate panel.");
+                    Console.ReadLine();
+                    return false;
+                }
+            }
+            _panels.Add(panel);
             int afterAdd = _panels.Count;
-
+            WriteFile(Directory.GetCurrentDirectory() + @"\Panels.csv");
             return beforeAdd != afterAdd;
         }
 
         public bool Remove(Panel panel)
         {
             int beforeRemove = _panels.Count;
-            if (_panels.Contains(panel)) _panels.Remove(panel);
+            
+            bool isEmpty = true;
+            foreach(var storedPanel in _panels)
+            {
+                if(storedPanel.Section == panel.Section && storedPanel.Row == panel.Row && storedPanel.Column == panel.Column)
+                {
+                    isEmpty = false;
+                    break;
+                }
+            }
+
+            if (!isEmpty)
+            {
+                _panels.Remove(panel);
+            }
+            else
+            {
+                Console.WriteLine("Panel does not exist.");
+                Console.ReadKey();
+                return false;
+            }
+
             int afterRemove = _panels.Count;
+            WriteFile(Directory.GetCurrentDirectory() + @"\Panels.csv");
             return beforeRemove != afterRemove;
         }
 
-        public bool Edit(Panel panelBeingEdited, Panel editedPanel)
+        public bool Update(Panel panelBeingEdited, Panel editedPanel)
         {
-            for(int i = 0; i < _panels.Count; i++)
+            for (int i = 0; i < _panels.Count; i++)
             {
                 if(_panels[i].Section == panelBeingEdited.Section && _panels[i].Row == panelBeingEdited.Row && _panels[i].Column == panelBeingEdited.Column)
                 {
                     _panels[i] = editedPanel;
+                    WriteFile(Directory.GetCurrentDirectory() + @"\Panels.csv");
                     return true;
                 }
             }
@@ -103,13 +141,18 @@ namespace SolarFarm.DAL
             return panelList;
         }
 
-        public List<Panel> WriteFile(string path)
+        public void WriteFile(string path)
         {
-            
-            
-            return new List<Panel>();
+            using (StreamWriter sw = new StreamWriter(path, false))
+            {
+                sw.WriteLine("Section,Row,Column,YearInstalled,Material,IsTracking"); // advance to next line
+                foreach(var panel in _panels)
+                {
+                    sw.WriteLine($"{panel.Section},{panel.Row},{panel.Column},{panel.YearInstalled},{(int)panel.Material},{panel.IsTracking}");
+                }
+                
+            }
+            return;
         }
-
-
     }
 }

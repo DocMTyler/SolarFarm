@@ -8,10 +8,10 @@ namespace SolarFarm.Core.DTO
 {
     public enum Material
     {
-        MULTICRYSTALLINESILICON = 1,
-        MONOCRYSTALLINESILICON,
-        AMORPHOUSSILICON,
-        CADMIUMTELLURIDE,
-        COPPERINDIUMGALLIUMSELENIDE
+        MultiCrySi = 1,
+        MonoCrysSi,
+        AmorphouSi,
+        CadmTellur,
+        CoIndGalSe
     }
 }

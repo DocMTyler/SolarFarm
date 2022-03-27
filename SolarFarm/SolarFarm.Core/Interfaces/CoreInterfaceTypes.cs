@@ -9,19 +9,19 @@ namespace SolarFarm.Core.Interfaces
 {
     public interface IPanelRepository
     {
-        List<Panel> GetAll();
+        List<Panel> FindPanelsBySection(string section);
         Panel Get(Panel panel);
         bool Add(Panel panel);
         bool Remove(Panel panel);
-        bool Edit(Panel panelBeingEdited, Panel editedPanel);
+        bool Update(Panel panelBeingEdited, Panel editedPanel);
     }
 
     public interface IPanelService
     {
-        List<Panel> LoadAll();
+        List<Panel> FindPanelsBySection(string section);
         Panel LoadPanel(Panel panel);
         bool Add(Panel panel);
         bool Remove(Panel panel);
-        public bool Edit(Panel panelBeingEdited, Panel editedPanel);
+        public bool Update(Panel panelBeingEdited, Panel editedPanel);
     }
 }

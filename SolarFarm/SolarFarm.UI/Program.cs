@@ -11,7 +11,6 @@ namespace SolarFarm.UI
         {
             ConsoleIO ui = new ConsoleIO();
             PanelController execution = new PanelController(ui);
-            execution.Setup();
             IPanelService service = PanelServiceFactory.GetPanelService();
             execution.Service = service;
             execution.Run();

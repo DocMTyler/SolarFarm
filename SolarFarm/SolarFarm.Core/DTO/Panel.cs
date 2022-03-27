@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace SolarFarm.Core.DTO
 {
@@ -15,5 +16,13 @@ namespace SolarFarm.Core.DTO
         public bool IsTracking { get; set; }
 
         public Material Material { get; set; }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine($" {Row}    {Column}  {YearInstalled:yyyy}  {Material}  {IsTracking}");
+
+            return builder.ToString();
+        }
     }
 }

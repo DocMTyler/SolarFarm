@@ -15,9 +15,9 @@ namespace SolarFarm.BLL
             _repo = repo;
         }
 
-        public List<Panel> LoadAll()
+        public List<Panel> FindPanelsBySection(string section)
         {
-            return _repo.GetAll();
+            return _repo.FindPanelsBySection(section);
         }
 
         public Panel LoadPanel(Panel panel)
@@ -35,9 +35,9 @@ namespace SolarFarm.BLL
             return _repo.Remove(panel);
         }
 
-        public bool Edit(Panel panelBeingEdited, Panel editedPanel)
+        public bool Update(Panel panelBeingEdited, Panel editedPanel)
         {
-            return _repo.Edit(panelBeingEdited, editedPanel);
+            return _repo.Update(panelBeingEdited, editedPanel);
         }
     }
 }
