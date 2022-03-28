@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using SolarFarm.Core.Interfaces;
 using SolarFarm.Core.DTO;
 
@@ -40,6 +39,7 @@ namespace SolarFarm.UI
                         break;
                     case 5:
                         MaterialsList();
+                        Console.ReadKey();
                         break;
                     default:
                         _ui.Display("Invalid input. Please enter a number 0 - 5");

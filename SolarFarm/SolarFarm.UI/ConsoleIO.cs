@@ -54,6 +54,7 @@ namespace SolarFarm.UI
             Display("2. Add a Panel");
             Display("3. Update a Panel");
             Display("4. Remove a Panel");
+            Display("5. Materials List");
             Display("Select [0-4]");
         }
 

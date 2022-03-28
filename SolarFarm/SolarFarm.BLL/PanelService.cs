@@ -1,6 +1,4 @@
-﻿using System;
-using SolarFarm.DAL;
-using SolarFarm.Core.DTO;
+﻿using SolarFarm.Core.DTO;
 using SolarFarm.Core.Interfaces;
 using System.Collections.Generic;
 

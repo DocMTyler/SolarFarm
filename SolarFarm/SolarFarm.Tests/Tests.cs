@@ -17,7 +17,7 @@ namespace SolarFarm.Tests
         {
             Panel panel = new();
             panel.Section = "North";
-            panel.Row = 1;
+            panel.Row = 3;
             panel.Column = 1;
             panel.YearInstalled = DateTime.Parse("1/1/2020");
             panel.Material = (Material)4;

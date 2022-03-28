@@ -1,6 +1,4 @@
-﻿using System;
-using SolarFarm.Core.DTO;
-using SolarFarm.BLL;
+﻿using SolarFarm.BLL;
 using SolarFarm.Core.Interfaces;
 
 namespace SolarFarm.UI
